@@ -26,15 +26,15 @@ import (
 	"testing"
 	"time"
 
-	"go.uber.org/zap/internal/exit"
-	"go.uber.org/zap/internal/ztest"
+	"github.com/hexinlee/zap/internal/exit"
+	"github.com/hexinlee/zap/internal/ztest"
 
-	"go.uber.org/zap/zapcore"
-	"go.uber.org/zap/zaptest/observer"
+	"github.com/hexinlee/zap/zapcore"
+	"github.com/hexinlee/zap/zaptest/observer"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"go.uber.org/atomic"
+	"github.com/hexinlee/atomic"
 )
 
 func TestReplaceGlobals(t *testing.T) {
@@ -273,7 +273,7 @@ func checkStdLogMessage(t *testing.T, msg string, logs *observer.ObservedLogs) {
 	assert.Equal(t, "redirected", entry.Entry.Message, "Unexpected entry message.")
 	assert.Regexp(
 		t,
-		`go.uber.org/zap/global_test.go:\d+$`,
+		`github.com/hexinlee/zap/global_test.go:\d+$`,
 		entry.Entry.Caller.String(),
 		"Unexpected caller annotation.",
 	)

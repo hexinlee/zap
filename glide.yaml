@@ -1,9 +1,9 @@
-package: go.uber.org/zap
+package: github.com/hexinlee/zap
 license: MIT
 import:
-- package: go.uber.org/atomic
+- package: github.com/hexinlee/atomic
   version: ^1
-- package: go.uber.org/multierr
+- package: github.com/hexinlee/multierr
   version: ^1
 testImport:
 - package: github.com/satori/go.uuid

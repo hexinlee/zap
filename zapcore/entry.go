@@ -26,10 +26,10 @@ import (
 	"sync"
 	"time"
 
-	"go.uber.org/zap/internal/bufferpool"
-	"go.uber.org/zap/internal/exit"
+	"github.com/hexinlee/zap/internal/bufferpool"
+	"github.com/hexinlee/zap/internal/exit"
 
-	"go.uber.org/multierr"
+	"github.com/hexinlee/multierr"
 )
 
 var (

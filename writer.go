@@ -25,9 +25,9 @@ import (
 	"io"
 	"io/ioutil"
 
-	"go.uber.org/zap/zapcore"
+	"github.com/hexinlee/zap/zapcore"
 
-	"go.uber.org/multierr"
+	"github.com/hexinlee/multierr"
 )
 
 // Open is a high-level wrapper that takes a variadic number of URLs, opens or

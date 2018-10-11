@@ -28,7 +28,7 @@ import (
 	"strings"
 	"time"
 
-	"go.uber.org/zap/zapcore"
+	"github.com/hexinlee/zap/zapcore"
 )
 
 // A Logger provides fast, leveled, structured logging. All methods are safe
@@ -256,7 +256,7 @@ func (log *Logger) clone() *Logger {
 func (log *Logger) check(lvl zapcore.Level, msg string) *zapcore.CheckedEntry {
 	// check must always be called directly by a method in the Logger interface
 	// (e.g., Check, Info, Fatal).
-	const callerSkipOffset = 2
+	const callerSkipOffset = 3 //original is 2
 
 	// Create basic checked entry thru the core; this will be non-nil if the
 	// log message will actually be written somewhere.

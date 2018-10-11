@@ -42,18 +42,18 @@ func TestTakeStacktrace(t *testing.T) {
 
 func TestIsZapFrame(t *testing.T) {
 	zapFrames := []string{
-		"go.uber.org/zap.Stack",
-		"go.uber.org/zap.(*SugaredLogger).log",
-		"go.uber.org/zap/zapcore.(ArrayMarshalerFunc).MarshalLogArray",
-		"github.com/uber/tchannel-go/vendor/go.uber.org/zap.Stack",
-		"github.com/uber/tchannel-go/vendor/go.uber.org/zap.(*SugaredLogger).log",
-		"github.com/uber/tchannel-go/vendor/go.uber.org/zap/zapcore.(ArrayMarshalerFunc).MarshalLogArray",
+		"github.com/hexinlee/zap.Stack",
+		"github.com/hexinlee/zap.(*SugaredLogger).log",
+		"github.com/hexinlee/zap/zapcore.(ArrayMarshalerFunc).MarshalLogArray",
+		"github.com/uber/tchannel-go/vendor/github.com/hexinlee/zap.Stack",
+		"github.com/uber/tchannel-go/vendor/github.com/hexinlee/zap.(*SugaredLogger).log",
+		"github.com/uber/tchannel-go/vendor/github.com/hexinlee/zap/zapcore.(ArrayMarshalerFunc).MarshalLogArray",
 	}
 	nonZapFrames := []string{
 		"github.com/uber/tchannel-go.NewChannel",
-		"go.uber.org/not-zap.New",
-		"go.uber.org/zapext.ctx",
-		"go.uber.org/zap_ext/ctx.New",
+		"github.com/hexinlee/not-zap.New",
+		"github.com/hexinlee/zapext.ctx",
+		"github.com/hexinlee/zap_ext/ctx.New",
 	}
 
 	t.Run("zap frames", func(t *testing.T) {

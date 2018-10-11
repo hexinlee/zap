@@ -25,10 +25,10 @@ import (
 	"fmt"
 	"time"
 
-	"go.uber.org/multierr"
-	"go.uber.org/zap"
-	"go.uber.org/zap/internal/ztest"
-	"go.uber.org/zap/zapcore"
+	"github.com/hexinlee/multierr"
+	"github.com/hexinlee/zap"
+	"github.com/hexinlee/zap/internal/ztest"
+	"github.com/hexinlee/zap/zapcore"
 )
 
 var (

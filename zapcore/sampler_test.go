@@ -26,10 +26,10 @@ import (
 	"testing"
 	"time"
 
-	"go.uber.org/atomic"
-	"go.uber.org/zap/internal/ztest"
-	. "go.uber.org/zap/zapcore"
-	"go.uber.org/zap/zaptest/observer"
+	"github.com/hexinlee/atomic"
+	"github.com/hexinlee/zap/internal/ztest"
+	. "github.com/hexinlee/zap/zapcore"
+	"github.com/hexinlee/zap/zaptest/observer"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
