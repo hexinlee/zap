@@ -25,7 +25,7 @@ import (
 
 	"github.com/hexinlee/zap/zapcore"
 
-	"github.com/hexinlee/multierr"
+	"go.uber.org/multierr"
 )
 
 const (

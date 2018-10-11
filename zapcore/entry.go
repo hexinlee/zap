@@ -29,7 +29,7 @@ import (
 	"github.com/hexinlee/zap/internal/bufferpool"
 	"github.com/hexinlee/zap/internal/exit"
 
-	"github.com/hexinlee/multierr"
+	"go.uber.org/multierr"
 )
 
 var (

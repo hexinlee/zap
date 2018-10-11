@@ -32,7 +32,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/hexinlee/atomic"
+	"go.uber.org/atomic"
 )
 
 func makeCountingHook() (func(zapcore.Entry) error, *atomic.Int64) {

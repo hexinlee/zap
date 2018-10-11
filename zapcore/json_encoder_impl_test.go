@@ -33,7 +33,7 @@ import (
 	"github.com/hexinlee/zap/internal/bufferpool"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/hexinlee/multierr"
+	"go.uber.org/multierr"
 )
 
 func TestJSONClone(t *testing.T) {

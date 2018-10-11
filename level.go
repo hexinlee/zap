@@ -21,7 +21,7 @@
 package zap
 
 import (
-	"github.com/hexinlee/atomic"
+	"go.uber.org/atomic"
 	"github.com/hexinlee/zap/zapcore"
 )
 

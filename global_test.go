@@ -34,7 +34,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/hexinlee/atomic"
+	"go.uber.org/atomic"
 )
 
 func TestReplaceGlobals(t *testing.T) {

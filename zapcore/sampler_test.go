@@ -26,7 +26,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hexinlee/atomic"
+	"go.uber.org/atomic"
 	"github.com/hexinlee/zap/internal/ztest"
 	. "github.com/hexinlee/zap/zapcore"
 	"github.com/hexinlee/zap/zaptest/observer"

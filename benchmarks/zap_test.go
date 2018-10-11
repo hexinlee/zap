@@ -25,7 +25,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/hexinlee/multierr"
+	"go.uber.org/multierr"
 	"github.com/hexinlee/zap"
 	"github.com/hexinlee/zap/internal/ztest"
 	"github.com/hexinlee/zap/zapcore"

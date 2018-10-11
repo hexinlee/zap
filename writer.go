@@ -27,7 +27,7 @@ import (
 
 	"github.com/hexinlee/zap/zapcore"
 
-	"github.com/hexinlee/multierr"
+	"go.uber.org/multierr"
 )
 
 // Open is a high-level wrapper that takes a variadic number of URLs, opens or
